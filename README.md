@@ -16,7 +16,7 @@ Um projeto web que pergunta ao usuário se ele vai dar um ponto. Ao clicar o bot
 
 ## Estrutura de arquivos
 
-index.html    # A estrutura HTML da página.
+index.html    # A estrutura HTML da página e código em JavaScript.
 index.css     # Os estilos CSS para a apresentação.
 
 ## Tecnologias utilizadas
