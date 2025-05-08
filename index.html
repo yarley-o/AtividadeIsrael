@@ -10,6 +10,32 @@
 
     </head>
     <body>
-        <h1>Exemplo de html</h1>
+        <div id="div1">
+        <h1>Você vai me dar um ponto?</h1>
+        <button class="button" id="buttonSim">Sim</button>
+        <button class="button" id="buttonNao">Não</button>
+        </div>
+        <script>
+            const buttonSim = document.getElementById("buttonSim");
+            const buttonNao = document.getElementById("buttonNao");
+            const div1 = document.getElementById("div1");
+            
+            buttonSim.addEventListener("click", () => {
+                alert("Me dá um ponto pf🙏");
+            });
+            
+            buttonNao.addEventListener("mouseover", () => {
+                const maxX = window.innerWidth - buttonNao.clientWidth;
+                const maxY = window.innerHeight - buttonNao.clientHeight;
+                const randomX = Math.floor(Math.random() * maxX);
+                const randomY = Math.floor(Math.random() * maxY);
+            
+                buttonNao.style.position = "absolute";
+                buttonNao.style.left = `${randomX}px`;
+                buttonNao.style.top = `${randomY}px`;
+            });
+            
+        </script>
+
     </body>
 </html>
